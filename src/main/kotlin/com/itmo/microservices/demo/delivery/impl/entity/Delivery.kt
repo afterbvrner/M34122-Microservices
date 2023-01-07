@@ -1,6 +1,5 @@
-package com.itmo.microservices.demo.delivery.entity
+package com.itmo.microservices.demo.delivery.impl.entity
 
-import javax.persistence.Entity
 import javax.persistence.GeneratedValue
 import javax.persistence.Id
 
