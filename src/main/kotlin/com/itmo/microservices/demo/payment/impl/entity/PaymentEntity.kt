@@ -4,17 +4,16 @@ package com.itmo.microservices.demo.payment.impl.entity
 import com.itmo.microservices.demo.payment.api.model.TransactionStatus
 import java.math.BigDecimal
 import java.util.*
-import javax.persistence.Entity
-import javax.persistence.GeneratedValue
-import javax.persistence.GenerationType
-import javax.persistence.Id
+import jakarta.persistence.Entity
+import jakarta.persistence.GeneratedValue
+import jakarta.persistence.Id
 
 
 
 @Entity
 class PaymentEntity {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue
     var id: UUID? = null
     var providerId: UUID? = null
     var amount: BigDecimal? = null

@@ -1,7 +1,7 @@
 package com.itmo.microservices.demo.delivery.impl.entity
 
-import javax.persistence.GeneratedValue
-import javax.persistence.Id
+import jakarta.persistence.GeneratedValue
+import jakarta.persistence.Id
 
 class Delivery {
 

@@ -26,11 +26,13 @@ class DefaultPaymentService(
 
     @InjectEventLogger
     private lateinit var eventLogger: EventLogger
-    override fun allTransactions(): List<PaymentModel>  = paymentEntityRepository.findAll()
-        .map{ it.toModel() }
+    override fun allTransactions(): List<PaymentModel> = paymentEntityRepository.findAll()
+        .map { it.toModel() }
 
     override fun changeTransactionStatus(paymentId: UUID, newStatus: TransactionStatus) {
-        TODO("Not yet implemented")
+        val paymentEntity = paymentEntityRepository.getReferenceById(paymentId)
+        paymentEntity.status = newStatus
+        paymentEntityRepository.saveAndFlush(paymentEntity)
     }
 
     override fun addTransaction(payment: PaymentModel) {

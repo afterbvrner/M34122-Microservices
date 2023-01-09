@@ -6,7 +6,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.6.6</version>
+        <version>3.0.1</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
@@ -18,7 +18,7 @@
 
     <properties>
         <github>Kofeinich/M34122-Microservices</github>
-        <java.version>11</java.version>
+        <java.version>17</java.version>
         <kotlin.version>1.6.10</kotlin.version>
         <guava.version>31.1-jre</guava.version>
         <jjwt.version>0.9.1</jjwt.version>
@@ -136,7 +136,7 @@
 
         <dependency>
             <groupId>ru.quipy</groupId>
-            <artifactId>tiny-event-sourcing-lib</artifactId>
+            <artifactId>tiny-event-sourcing-spring-boot-starter</artifactId>
             <version>2.2.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
