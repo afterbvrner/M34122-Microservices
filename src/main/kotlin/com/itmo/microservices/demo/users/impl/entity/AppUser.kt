@@ -1,7 +1,7 @@
 package com.itmo.microservices.demo.users.impl.entity
 
-import javax.persistence.Entity
-import javax.persistence.Id
+import jakarta.persistence.Entity
+import jakarta.persistence.Id
 
 @Entity
 class AppUser {
